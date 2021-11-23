@@ -1,6 +1,8 @@
 import React from 'react';
 
-const Cart = ({cart}) => {
+const Cart = (props) => {
+    console.log(props);
+    const {cart} = props;
 
     let totalQuantity = 0;
     //Total Price Calculation
@@ -26,6 +28,7 @@ const Cart = ({cart}) => {
             <p>Shipping: ${shipping}</p>
             <p>Tax: ${tax.toFixed(2)}</p>
             <p>Total: ${grandTotal.toFixed(2)}</p>
+            {props.children}
         </div>
     );
 };

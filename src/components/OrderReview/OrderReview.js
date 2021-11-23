@@ -30,6 +30,9 @@ const OrderReview = () => {
                 </div>
                 <div className="cart-container">
                     <Cart cart={cart}></Cart>
+                    <div>
+                        <h2>Order Review Para</h2>
+                    </div>
                 </div>
             </div>
         </div>
